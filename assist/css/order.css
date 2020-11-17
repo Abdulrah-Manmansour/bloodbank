@@ -570,6 +570,16 @@ footer .backgroundlast .lastp-footer p span{
     .lastp-footer {
         text-align: center;
     }
+    .CONTACT-INFO{
+        margin: auto;
+        width: 4400px;
+        
+       }
+       .CONTACT-INFO .sign-in{
+           color: #fff;
+           margin-left: 8px;
+           border-bottom: 1px solid #fff;
+       }
 
 }
 

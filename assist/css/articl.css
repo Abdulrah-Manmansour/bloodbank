@@ -525,7 +525,9 @@ footer .backgroundlast .lastp-footer p span{
      
     }
     .CONTACT-INFO .sign-in{
-float: right;
+        color: #fff;
+        margin-left: 8px;
+        border-bottom: 1px solid #fff;
     }
     .contact .contactdivs{
         padding: 0 10px;

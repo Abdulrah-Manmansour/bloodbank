@@ -1027,6 +1027,9 @@ right: 190px;
     .test{
         left: 230px;
     }
+    .bacground-about{
+        height: 400px;
+    }
 }
   
   @media(max-width:599px){

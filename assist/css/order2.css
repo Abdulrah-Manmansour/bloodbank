@@ -446,12 +446,12 @@ footer .backgroundlast .lastp-footer p span{
         text-align: center;
     }
     .CONTACT-INFO{
-     margin: auto;
-     width: 200px;
-     
+     margin: auto; 
     }
     .CONTACT-INFO .sign-in{
-float: right;
+        color: #fff;
+        margin-left: 8px;
+        border-bottom: 1px solid #fff;
     }
     .contact .contactdivs{
         padding: 0 10px;
