@@ -17,10 +17,9 @@
 }
 
 .CONTACT-INFO i {
-    font-size: 22px !important;
-    margin-right: 20px !important;
-    text-align: center !important;
-    margin-right:20px;
+    float: left;
+    font-size: 20px;
+    margin-right: 3px;
     margin-top: 5px;
     color: #fff;
 }
@@ -57,8 +56,9 @@
 }
 
 .upper-par .icon-social i {
-    font-size: 20px;
-    margin-right: 15px;
+    font-size: 22px !important;
+    margin-right: 20px !important;
+    text-align: center !important;
     transition: .3s all;
     cursor: pointer;
     color: #fff;
@@ -84,6 +84,9 @@
     padding: 10px 0;
     margin: 0;
 }
+.contact-language a{
+    text-decoration: none;
+}
 
 .contact-language .line-info-contact {
     width: 32px;
@@ -105,8 +108,8 @@
     color: gray;
     margin-right: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
-
 
 .CONTACT-INFO {
     margin: 0;
@@ -201,23 +204,61 @@ nav .btn-nav img {
     width: 40px;
     transform: translateX(20px);
 }
-
-/*====end navbar=====*/
-/*=====start section about======*/
-.order {
+/*===end navbar=======*/
+/*======start section order======*/
+.order{
     padding: 20px 0;
-    background-color: #f8f9fa;
+    background-color:#fbfbfb;
+    
 }
-
-.header-order {
+.btn-toolbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .lks{
+      background-color: #fff ;
+      padding: 10px 20px;
+      transition: .3s all;
+      margin-right: 3px;
+      margin-bottom: 20px;
+  }
+  .lks:hover{
+      background-color: #022974;
+      color: #fff;
+     
+  }
+  .lks2:hover{
+      background-color: #022974;
+      color: #fff;
+     
+  }
+  .lks2{
+      background-color: #022974;
+      color: #fff;
+      padding: 3px 20px;
+      height: 46px;
+      margin-right: 3px;
+  }
+.background-order{
+    background-color:#f9f9f9;
+    margin: auto;
+    margin-top: 8px;
+}
+.header-order{
     background-color: #fff;
     border: 1px solid rgb(214, 214, 214);
     margin: auto;
     padding: 10px;
     margin-bottom: 30px;
 }
-
 .order .header-order .a1 {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+.order .header-order .a3 {
     font-size: 14px;
     text-decoration: none;
     color: rgb(202, 202, 202);
@@ -225,218 +266,178 @@ nav .btn-nav img {
 
 .order .header-order .span2 {
     margin-right: 10px;
+    color: rgb(202, 202, 202);
+    margin-left: 3px;
+}
+.order .header-order .span3 {
+    margin-right: 10px;
     color: #022974;
     margin-left: 3px;
-
 }
 
 .order .header-order .a2 {
     color: #022974;
     text-decoration: none;
 }
-
-.headerorder {
-    margin-top: 50px;
-}
-
-.headerorder h4 {
-    text-align: center;
-    font-weight: bold;
-    color: rgb(189, 11, 11);
-}
-
-.inewhiteorder {
-    width: 100%;
+.inewhiteorder{
     height: 1px;
     background-color: rgb(201, 200, 200);
-
+    margin-bottom: 5px;
+    margin-top: 20px;
     margin: auto;
 }
-
-.linered-order {
-    width: 110px;
-    height: 2px;
+.linered-order{
     background-color: rgb(189, 11, 11);
+    height: 2px;
+    width: 120px;
+    transform: translateX(-3px);
     margin: auto;
-
 }
-
-/*start background-order*/
-.order .background-order {
-    margin: auto;
-  
-    background-color: rgb(233, 233, 233);
-    margin-top: 5px;
-
-}
-
-.order .background-order .contact-order {
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
-
-}
-
-/*start inputs selcet*/
-.input-order {
-    margin: auto;
-
-    margin-bottom: 20px;
-    width: 80%;
- display: flex;
- justify-content: center;
- align-items: center;
-    padding: 20px 0;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    background: #fff;
-  width: 100%;
-    padding: 0 .5em;
-    color: gray;
-    font-size: 1em;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-}
-
-select::-ms-expand {
-    display: none;
-}
-
-.select {
-    position: relative;
-  
-    width: 290px;
-    height: 3em;
-    line-height: 3;
-    background: white;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 1em;
-    background: none;
-    cursor: pointer;
-    border-right: 1px solid rgb(224, 224, 224);
-    pointer-events: none;
-    transition: .25s all ease;
-    color: #06255f;
-
-}
-
-.order .divbutton button {
-    width: 50px;
-    color: #06255f;
-    height: 50px;
-    margin-top: -10px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background-color: #fff;
+.headerorder h4{
     text-align: center;
-    cursor: pointer;
-transition: .3s all;
+    color: rgb(189, 11, 11);
+    font-weight: bold;
 }
-.order .divbutton button:hover{
-    box-shadow: 3px 3px 8px rgb(153, 152, 152);
-    transform: scale(1.1);
-}
-.order .contct-order-blod{
- 
-    background-color: #fff;
-    border-radius: 0 300px 300px 0;
-    margin-bottom: 30px;
-}
- .background-kind-blod{
-width: 130px;
-   height: 130px;
-    background-color: rgb(214, 214, 214);
-    border-radius: 50%;
-display: flex;
-margin-top: 3px;
-margin-right: 3px;
-margin-bottom: 3px;
-margin-left: 10px;
-    justify-content: center;
+.background-order .input-order {
+    display: flex;
     align-items: center;
-}
-.background-kind-blod h3{
+    justify-content: center;
+    padding-top: 20px;
+    }
+    
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        background: #fff;
+      width: 100%;
+        padding: 0 .5em;
+        color: gray;
+        font-size: 1em;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    
+    select::-ms-expand {
+        display: none;
+    }
+    
+    .select {
+        position: relative;
+        height: 3em;
+        width: 290px;
+        line-height: 3;
+        background: white;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 1em;
+        background: none;
+        cursor: pointer;
+        border-right: 1px solid rgb(224, 224, 224);
+        pointer-events: none;
+        transition: .25s all ease;
+        color: #06255f;
+    
+    }
+    .divbutton{
+       transform: translateY(-10px);
+     
+    }
+     .divbutton button {
+        width: 50px;
+        color: #06255f;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        text-align: center;
+        cursor: pointer;
+    transition: .3s all;
+    }
+     .divbutton button:hover{
+        box-shadow: 3px 3px 8px rgb(153, 152, 152);
+        transform: scale(1.1);
+    }
+    .blod1{
+        background-color: #fff;
+        margin: auto;
+        border-radius:  0 300px 300px 0;
+    }
+     .blod1 .background-blod1{
+         background-color: rgb(241, 241, 241);
+         width: 120px;
+         height: 120px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 300px;
+         margin-right: 3px;
+         margin-bottom: 3px;
+         margin-top: 3px;
+         margin-left: 20px;
+     }
+     .contact-blod1{
+         margin-top: 5px;
+        
+     }
+     .contact-blod1 div:not(:last-of-type){
+         margin-bottom: 15px;
+     }
+     .contact-blod1  span{
+         color: #06255f;
+     }
+    .span1-blod1{
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .span1-blod3{
+        margin-left: 40px;
+        font-weight: bold;
+       
+    }
+    
+      .header-bold1{
     font-weight: bold;
     font-size: 45px;
-}
+     
+     }
+    .button-blod1{
+       margin-top: 30px;
+    }
+     .button-blod1 button{
+         border: none ;
+         padding: 15px 50px ;
+         background-color: rgb(241, 241, 241) ;
+         color: #000;
+         float: left;
+         font-weight: bold;
+     }
+     .button-blod1 button:hover{
+         color: #000;
+         background-color: rgb(241, 241, 241) ;
+     }
+     .button-blod1 .jj{
+        background-color: #06255f;
+        color: #fff;
+    }
+    .button-blod1 .jj:hover{
+        background-color: #06255f;
+        color: #fff;
+    }
 
-.order .contct-order-blod p{
-    margin-top: 10px;
-}
-.order .contct-order-blod .span1{
-    margin-left: 15px;
-    color: #022974;
-    font-weight: bold;
-}
-.order .contct-order-blod .span2{
-    color: #022974;
-}
-.order .contct-order-blod .k{
-    margin-left: 30px;
-}
-
- .btn-blod-order{
-    background-color: rgb(241, 241, 241)!important;
-font-weight: bold;
-color: #000;
-padding: 20px 50px;
-border: none;
-}
-.btn-blod-order:hover{
-    color: #000;
-}
-.order .button-bold-order{
-    text-align: center;
-    padding: 30px 0;
-    
-}
-.order .butn-blue{
-    background-color: #022974 !important;
-    color: #fff;
-}
-/*start group button*/
-.box-button{  
- display: flex;
- align-items: center;
- justify-content: center;
- 
-}
-.box-button button{
-    margin-left: 3px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    background-color: #fff;
-    padding: 10px 20px;
-    border: 1px solid rgb(201, 200, 200);
-    margin-bottom: 20px;
-  transform: translateX(-13px);
-}
-.box-button .bt1{
-    background-color: #022974;
-    color: #fff;
-}
-/*end button group*/
-/*=====end section order=====*/
+/*=====end section order*/
 /*=====start footer====*/
 footer .backgroundlast{
     width: 100%;
@@ -507,13 +508,14 @@ footer .backgroundlast .lastp-footer p span{
     color: rgb(189, 11, 11);
 }
 /*======end footer=====*/
-/*=====start media query=====*/
-@media(max-width:990px) {
+/*=======start media query========*/
+@media(max-width:990px){
     .upper-par .contact-language {
-
         text-align: center;
     }
-
+    .button-blod1 {
+        margin-top: -83px;
+    }
     .contact-language .line-info-contact {
         width: 32px;
         height: 1px;
@@ -571,446 +573,487 @@ footer .backgroundlast .lastp-footer p span{
         text-align: center;
     }
     .CONTACT-INFO{
-        margin: auto;
-        width: 4400px;
-        
-       }
-       .CONTACT-INFO .sign-in{
-           color: #fff;
-           margin-left: 8px;
-           border-bottom: 1px solid #fff;
-       }
-
-}
-
-@media(max-width:890px) {
-    .order .divbutton {
-        margin: auto;
+     margin: auto;
+     width: 200px;
     }
-
-    /*start inputs selcet*/
-    .input-order {
-        margin: auto;
+    .CONTACT-INFO .sign-in{
+        color: #fff;
+        margin-left: 8px;
+        border-bottom: 1px solid #fff;
+    }
+    .contact .contactdivs{
+        padding: 0 10px;
+    }
+}
+@media(max-width:767px){
+    .select {
         position: relative;
-        margin-bottom: 50px;
-        width: 80%;
-        padding: 20px 0;
-    }
-}
-
-@media(max-width:767px) {
-    .input-order {
-        display: block;
-    }
-
-    .divbutton {
-        text-align: center;
-      
-    }
-.select{
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.background-kind-blod{
-    width: 80px;
-       height: 80px;
-        background-color: rgb(214, 214, 214);
-        border-radius: 50%;
-    display: flex;
-    margin-top: 13px;
-    margin-right: 3px;
-    margin-bottom: 3px;
-    margin-left: 10px;
-        justify-content: center;
-        align-items: center;
-    }
-    .background-kind-blod h3{
-        font-weight: bold;
-        font-size: 30px;
-    }
-    .order .contct-order-blod p{
-        line-height: 30px;
-        margin: 0;
-    }
-    .order .contct-order-blod .span1{
-        margin-left: 2px;
-        color: #022974;
-        font-weight: bold;
-        font-size: 12px;
-    }
-    .order .contct-order-blod .span2{
-        color: #022974;
-        font-size: 12px;
-    }
-    .order .contct-order-blod .k{
-        margin-left: 3px;
-    }
-    .dd{
-        background-color:transparent;
-        margin-left: 80px;
-        
-    }
-    .btn-blod-order{
-        background-color: rgb(241, 241, 241)!important;
-    font-weight: bold;
-    color: #000;
-    padding: 16px 20px;
-    border: none;
-    }
-    .box-button button{
-        margin-left: 3px;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        background-color: #fff;
-        padding: 10px 20px;
-        border: 1px solid rgb(201, 200, 200);
+        height: 3em;
+        width: 200px;
+        line-height: 3;
+        background: white;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-left: 10px;
         margin-bottom: 20px;
-      transform: translateX(-2px);
     }
-}
-@media(max-width:756px){
-    .background-kind-blod{
-        width: 85px;
-           height: 85px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 50%;
+    .blod1 .background-blod1{
+        background-color: rgb(241, 241, 241);
+        width: 100px;
+        height: 100px;
         display: flex;
-        margin-top: 10px;
-
+        justify-content: center;
+        align-items: center;
+        border-radius: 300px;
         margin-right: 3px;
         margin-bottom: 3px;
-        margin-left: 10px;
-            justify-content: center;
-            align-items: center;
-        }
-        .background-kind-blod h3{
-            font-weight: bold;
-            font-size: 30px;
-        }
-        .order .contct-order-blod p{
-            margin-top: 1px;
-        }
-        .order .contct-order-blod .span1{
-            margin-left: 0;
-            color: #022974;
-            font-weight: bold;
-            font-size: 13px;
-        }
-        .order .contct-order-blod .span2{
-            color: #022974;
-            font-size: 11px;
-            
-        }
-        .order .contct-order-blod .k{
-            margin-left: 0;
-        }
-        .dd{
-            
-            background-color: transparent;
-               margin-left: 90px;
-        }
-    
-        .btn-blod-order{
-            background-color: rgb(241, 241, 241)!important;
-        font-weight: bold;
-        color: #000;
-        padding: 16px 20px;
-        border: none;
-        text-align: center;
-        }
-}
-@media(max-width:575px){
-    .dd{
-            
-        background-color: transparent;
-           margin-left: 0;
-    }
-    .background-kind-blod{
-        width: 100px;
-           height: 100px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 50%;
-        display: flex;
         margin-top: 3px;
-        margin-right: 3px;
-        margin-bottom:0;
-        margin-left: 3px;
-        transform: translateY(5px);
-            justify-content: center;
-            align-items: center;
-        }
-        .background-kind-blod h3{
-            font-weight: bold;
-            font-size: 30px;
-        }
-        .order .contct-order-blod p{
-            margin-top: 0;
-        }
-        .order .contct-order-blod .span1{
-            margin-left: 2px;
-            color: #022974;
-            font-weight: bold;
-         font-size: 13px;
-        }
-        .order .contct-order-blod .span2{
-            color: #022974;
-        }
-        .order .contct-order-blod .k{
-            margin-left: 2px;
-        }
-        .btn-blod-order{
-            background-color: rgb(241, 241, 241)!important;
+        margin-left: 10px;
+    }
+    .span1-blod1{
+        margin-left: 10px;
         font-weight: bold;
+    }
+    .span1-blod3{
+        margin-left: 10px;
+        font-weight: bold;
+    }
+    .button-blod1 button{
+        border: none ;
+        padding: 15px 20px ;
+        background-color: rgb(241, 241, 241) ;
         color: #000;
-        padding: 16px 10px;
-        border: none;
+        float: left;
+        font-weight: bold;
+    }
+}
+@media(max-width:520px){
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
         }
-
-        .box-button button{
-            margin-left: 3px;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            outline: none;
-            background-color: #fff;
-            padding: 10px 15px;
-            border: 1px solid rgb(201, 200, 200);
+        .select {
+            position: relative;
+            height: 3em;
+            width: 390px;
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
             margin-bottom: 20px;
-          transform: translateX(-2px);
+        }
+        .divbutton {
+            margin: auto;
+            width: 100px;
         }
 }
-@media(max-width:456px){
-    
-    .background-kind-blod{
-        width: 100px;
-           height: 100px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 50%;
-        display: flex;
-        margin-top: 2px;
-        margin-right: 3px;
-        margin-bottom:3px;
-        margin-left: 3px;
-      
-            justify-content: center;
-            align-items: center;
+@media(max-width:480px){
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
         }
-        .background-kind-blod h3{
-            font-weight: bold;
-            font-size: 30px;
+        .select {
+            position: relative;
+            height: 3em;
+            width: 340px;
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
         }
-        .order .contct-order-blod p{
-            margin: 0;
-            line-height: 30px;
+        .divbutton {
+            margin: auto;
+            width: 100px;
         }
-        .order .contct-order-blod .span1{
-            margin-left: 2px;
-            color: #022974;
-            font-weight: bold;
-         font-size: 13px;
-        }
-        .order .contct-order-blod .span2{
-            color: #022974;
-            font-size: 13px;
-        }
-        .order .contct-order-blod .k{
-            margin-left: 2px;
-        }
-        .btn-blod-order{
-            background-color: rgb(241, 241, 241)!important;
-        font-weight: bold;
-        color: #000;
-        padding: 16px 10px;
-        font-size: 13px;
-        border: none;
-        }
-}
-@media(max-width:425px){
-    .background-kind-blod{
-        width: 85px;
-           height: 85px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 50%;
-        display: flex;
-        margin-top: 2px;
-        margin-right: 3px;
-        margin-bottom:3px;
-        margin-left: 3px;
-      
-            justify-content: center;
-            align-items: center;
-        }
-        .background-kind-blod h3{
-            font-weight: bold;
-            font-size: 30px;
-        }
-        .order .contct-order-blod p{
-            margin: 0;
-            line-height: 30px;
-        }
-        .order .contct-order-blod .span1{
-            margin-left: 2px;
-            color: #022974;
-            font-weight: bold;
-         font-size: 13px;
-        }
-        .order .contct-order-blod .span2{
-            color: #022974;
-            font-size: 13px;
-        }
-        .order .contct-order-blod .k{
-            margin-left: 2px;
-        }
-        .btn-blod-order{
-            background-color: rgb(241, 241, 241)!important;
-        font-weight: bold;
-        color: #000;
-        padding: 16px 10px;
-        font-size: 13px;
-        border: none;
-        }
-}
-@media(max-width:406px){
-   
-        .background-kind-blod{
-            width: 80px;
-               height: 80px;
-                background-color: rgb(214, 214, 214);
-                border-radius: 50%;
-            display: flex;
-            margin-top: 12px;
-            margin-right: 3px;
-            margin-bottom:3px;
-            margin-left: 3px;
-          
-                justify-content: center;
-                align-items: center;
-            }
-            .background-kind-blod h3{
-                font-weight: bold;
-                font-size: 30px;
-            }
-            .order .contct-order-blod p{
-                margin: 0;
-                line-height: 30px;
-            }
-            .order .contct-order-blod .span1{
-                margin-left: 2px;
-                color: #022974;
-                font-weight: bold;
-             font-size: 11px;
-            }
-            .order .contct-order-blod .span2{
-                color: #022974;
-                font-size: 11px;
-            }
-            .order .contct-order-blod .k{
-                margin-left: 2px;
-            }
-            .btn-blod-order{
-                background-color: rgb(241, 241, 241)!important;
-            font-weight: bold;
+        .button-blod1 button{
+            border: none ;
+            padding: 15px 10px ;
+            background-color: rgb(241, 241, 241) ;
             color: #000;
-            padding: 16px 10px;
-            font-size: 13px;
-            border: none;
-            }
-.select{
-width: 220px;
+            float: left;
+            font-weight: bold;
+        }
+        .blod1 .background-blod1{
+            background-color: rgb(241, 241, 241);
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 300px;
+            margin-right: 3px;
+            margin-bottom: 0;
+            transform: translateY(5px);
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        .span1-blod1{
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        .span1-blod3{
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        .lks{
+            background-color: #fff ;
+            padding: 10px 14px;
+            transition: .3s all;
+            margin-right: 3px;
+            margin-bottom: 20px;
+        }
+        .lks2{
+            background-color: #022974;
+            color: #fff;
+            padding: 3px 14px;
+            height: 46px;
+            margin-right: 3px;
+        }
 }
-
-.box-button button{
-    margin-left: 3px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: none;
-    background-color: #fff;
-    padding: 10px 13px;
-    border: 1px solid rgb(201, 200, 200);
-    margin-bottom: 20px;
-
+@media(max-width:445px){
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
+        }
+        .select {
+            position: relative;
+            height: 3em;
+            width: 340px;
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .divbutton {
+            margin: auto;
+            width: 100px;
+        }
+        .button-blod1 button{
+            border: none ;
+            padding: 15px 5px ;
+            background-color: rgb(241, 241, 241) ;
+            color: #000;
+            float: left;
+            font-weight: bold;
+            transform: translateX(-10px);
+        }
+        .blod1 .background-blod1{
+            background-color: rgb(241, 241, 241);
+            width: 90px;
+            height:90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 300px;
+            margin-right: 3px;
+            margin-bottom: 0;
+            transform: translateY(5px);
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        .span1-blod1{
+            margin-left: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .span1-blod3{
+            margin-left: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+}
+@media(max-width:419px){
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
+        }
+        .select {
+            position: relative;
+            height: 3em;
+            width: 300px;
+            transform: translateX(16px);
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .divbutton {
+            margin: auto;
+            width: 100px;
+        }
+        .button-blod1 button{
+            border: none ;
+            padding: 15px 2px ;
+            background-color: rgb(241, 241, 241) ;
+            color: #000;
+            float: left;
+            font-weight: bold;
+            transform: translateX(-10px);
+        }
+        .blod1 .background-blod1{
+            background-color: rgb(241, 241, 241);
+            width: 90px;
+            height:90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 300px;
+            margin-right: 3px;
+        transform: translateY(-2px);    
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        .span1-blod1{
+            margin-left: 1px;
+            font-weight: bold;
+         
+        }
+        .span1-blod3{
+            margin-left: 1px;
+            font-weight: bold;
+           
+        }
+        .contact-blod1 {
+            margin-top: 2px;
+        }
+        .contact-blod1 div:not(:last-of-type) {
+            margin-bottom: 5px;
+}
+.contact-blod1 span {
+    color: #06255f;
+    font-size: 14px;
+    
+}
+}
+@media(max-width:401px){
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
+        }
+        .select {
+            position: relative;
+            height: 3em;
+            width: 300px;
+            transform: translateX(16px);
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .divbutton {
+            margin: auto;
+            width: 100px;
+        }
+        .button-blod1 button{
+            border: none ;
+            padding: 15px 2px ;
+            background-color: rgb(241, 241, 241) ;
+            color: #000;
+            float: left;
+            margin-top: 10px;
+            font-weight: bold;
+            transform: translateX(-10px);
+        }
+        .blod1 .background-blod1{
+            background-color: rgb(241, 241, 241);
+            width: 70px;
+            height:70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 300px;
+            margin-right: 3px;
+        transform: translateY(6px);    
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        .blod1 .background-blod1 h3{
+            font-size: 20px;
+        }
+        .span1-blod1{
+            margin-left: 1px;
+            font-weight: bold;
+         
+        }
+        .span1-blod3{
+            margin-left: 1px;
+            font-weight: bold;
+           
+        }
+        .contact-blod1 {
+            margin-top: 2px;
+        }
+        .contact-blod1 div:not(:last-of-type) {
+            margin-bottom: 5px;
+}
+.contact-blod1 span {
+    color: #06255f;
+    font-size: 14px;
+    
+}
+}
+@media(max-width:384px){
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
+        }
+        .select {
+            position: relative;
+            height: 3em;
+            width: 300px;
+            transform: translateX(30px);
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .divbutton {
+            margin: auto;
+            width: 100px;
+            transform: translateX(-30px);
+        }
+        .button-blod1 button{
+            border: none ;
+            padding: 15px 2px ;
+            background-color: rgb(241, 241, 241) ;
+            color: #000;
+            float: left;
+            font-weight: bold;
+            transform: translateX(-10px);
+            font-size: 15px !important;
+        }
+        .blod1 .background-blod1{
+            background-color: rgb(241, 241, 241);
+            width: 70px;
+            height:70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 300px;
+            margin-right: 3px;
+        transform: translateY(3px);    
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+        .span1-blod1{
+            margin-left: 1px;
+            font-weight: bold;
+         
+        }
+        .span1-blod3{
+            margin-left: 1px;
+            font-weight: bold;
+           
+        }
+        .contact-blod1 {
+            margin-top: 2px;
+        }
+        .contact-blod1 div:not(:last-of-type) {
+            margin-bottom: 5px;
+}
+.contact-blod1 span {
+    color: #06255f;
+    font-size: 13px;
+    
 }
 }
 @media(max-width:368px){
-    .background-kind-blod{
-        width: 75px;
-           height: 75px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 50%;
-        display: flex;
-        margin-top: 10px;
-        margin-right: 3px;
-        margin-bottom:3px;
-        margin-left: 3px;
-      
-            justify-content: center;
-            align-items: center;
+    .background-order .input-order {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding:20px;
         }
-        .background-kind-blod h3{
+        .select {
+            position: relative;
+            height: 3em;
+            width: 300px;
+            transform: translateX(40px);
+            line-height: 3;
+            margin: auto;
+            background: white;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+        .divbutton {
+            margin: auto;
+            width: 100px;
+            transform: translateX(-30px);
+        }
+        .button-blod1 button{
+            border: none ;
+            padding: 15px 2px ;
+            background-color: rgb(241, 241, 241) ;
+            color: #000;
+            float: left;
             font-weight: bold;
-            font-size: 30px;
+            transform: translateX(-10px);
+            font-size: 15px !important;
         }
-        .order .contct-order-blod p{
-            margin: 0;
-            line-height: 30px;
-        }
-        .order .contct-order-blod .span1{
-            margin-left: 2px;
-            color: #022974;
-            font-weight: bold;
-         font-size: 11px;
-        }
-        .order .contct-order-blod .span2{
-            color: #022974;
-            font-size: 11px;
-        }
-        .order .contct-order-blod .k{
-            margin-left: 2px;
-        }
-        .btn-blod-order{
-            background-color: rgb(241, 241, 241)!important;
-        font-weight: bold;
-        color: #000;
-        padding: 16px 10px;
-        font-size: 13px;
-        border: none;
-        }
-        .box-button button{
-            margin-left: 3px;
-            border: none;
+        .blod1 .background-blod1{
+            background-color: rgb(241, 241, 241);
+            width: 70px;
+            height:70px;
             display: flex;
             justify-content: center;
             align-items: center;
-            outline: none;
-            background-color: #fff;
-            padding: 10px ;
-            border: 1px solid rgb(201, 200, 200);
-            margin-bottom: 20px;
-        
+            border-radius: 300px;
+            margin-right: 3px;
+        transform: translateY(3px);    
+            margin-top: 3px;
+            margin-left: 3px;
         }
-}
-@media(max-width:361px){
-    .background-kind-blod{
-        width: 65px;
-           height: 65px;
-            background-color: rgb(214, 214, 214);
-            border-radius: 50%;
-        display: flex;
-        margin-top: 10px;
-        margin-right: 3px;
-        margin-bottom:3px;
-        margin-left: 3px;
-      
-            justify-content: center;
-            align-items: center;
+        .span1-blod1{
+            margin-left: 1px;
+            font-weight: bold;
+         
         }
+        .span1-blod3{
+            margin-left: 1px;
+            font-weight: bold;
+           
+        }
+        .contact-blod1 {
+            margin-top: 2px;
+        }
+        .contact-blod1 div:not(:last-of-type) {
+            margin-bottom: 5px;
 }
-
-/*=====end media query=====*/
+.contact-blod1 span {
+    color: #06255f;
+    font-size: 12px;
+    
+}
+}
+/*========end meida query=========*/

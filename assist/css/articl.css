@@ -84,6 +84,9 @@
     padding: 10px 0;
     margin: 0;
 }
+.contact-language a{
+    text-decoration: none;
+}
 
 .contact-language .line-info-contact {
     width: 32px;
@@ -462,7 +465,6 @@ footer .backgroundlast .lastp-footer p span{
     .upper-par .contact-language {
         text-align: center;
     }
-
     .contact-language .line-info-contact {
         width: 32px;
         height: 1px;
@@ -533,4 +535,4 @@ footer .backgroundlast .lastp-footer p span{
         padding: 0 10px;
     }
 }
-/*========end meida query=========*/
+/*========end meida query=========*/w

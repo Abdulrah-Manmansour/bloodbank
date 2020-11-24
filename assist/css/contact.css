@@ -84,6 +84,9 @@
     padding: 10px 0;
     margin: 0;
 }
+.contact-language a{
+    text-decoration: none;
+}
 
 .contact-language .line-info-contact {
     width: 32px;
@@ -273,24 +276,14 @@ nav .btn-nav img {
     padding: 15px 0;
     outline: none;
 }
-.divcontact2 input{
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    border: 1px solid rgb(202, 202, 202);
-    margin-bottom: 15px;
+.form-control {
+border-radius: 0%;
+padding:0px 13px !important ;
 }
-.divcontact2 textarea{
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    border: 1px solid rgb(202, 202, 202);
-    margin-bottom: 15px; 
-}
+.bb{
+    padding: 20px 13px !important;
+} 
+
 .divcontact2 .sned{
     width: 100%;
     border: none;
@@ -333,14 +326,29 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.img-social img{
-    max-width: 50px;
-    margin-bottom: 15px;
+.img-social i{
+    margin-right: 20px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s all;
 }
-.img-social img:not(:last-of-type){
-    margin-left: 15px;
+    .fa-facebook{
+        color: rgb(46, 46, 223);
+    }
+    .fa-whatsapp{
+        color:rgb(11, 180, 11);
+    }
+    .fa-twitter{
+        color: skyblue;
+    }
+.fa-google-plus{
+    color: #f00;
+    transition: .3s all;
 }
-
+.fa-google-plus:hover{
+    transform: scale(1.1);
+}
 /*=======end secion contact=========*/
 
 /*=====start footer====*/

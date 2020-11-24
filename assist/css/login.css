@@ -84,7 +84,9 @@
     padding: 10px 0;
     margin: 0;
 }
-
+.contact-language a{
+    text-decoration: none;
+}
 .contact-language .line-info-contact {
     width: 32px;
     height: 1px;
@@ -342,7 +344,9 @@ select {
 select::-ms-expand {
     display: none;
 }
-
+.form-control{
+    height: 100%;
+}
 .select {
     position: relative;
   
@@ -350,7 +354,7 @@ select::-ms-expand {
     height: 3em;
     line-height: 3;
     background: #fbfbfb;
-    border: 1px solid rgb(214, 214, 214);
+
     overflow: hidden;
     
     margin-left: 20px;

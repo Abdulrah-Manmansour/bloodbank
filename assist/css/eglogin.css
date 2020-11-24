@@ -1,11 +1,8 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
-    box-sizing: border-box;
 }
-
 /* ===start upper bar=====*/
 .upper-par {
     background-color: #06255f;
@@ -14,12 +11,13 @@
 .CONTACT-INFO {
     margin: 0;
     padding: 7px 0;
+    
 }
 
-.CONTACT-INFO i {
-    float: left;
-    font-size: 20px;
-    margin-right: 3px;
+.icon-social i {
+    text-align: center !important;
+    font-size: 22px !important;
+    margin-right: 20px !important;
     margin-top: 5px;
     color: #fff;
 }
@@ -52,13 +50,12 @@
     margin: 0;
     padding: 7px 0;
     text-align: center;
-
+    
 }
 
 .upper-par .icon-social i {
-    font-size: 22px !important;
-    margin-right: 20px !important;
-    text-align: center !important;
+    font-size: 20px;
+    margin-right: 15px;
     transition: .3s all;
     cursor: pointer;
     color: #fff;
@@ -85,29 +82,31 @@
     margin: 0;
 }
 
-.contact-language .line-info-contact {
-    width: 32px;
-    height: 1px;
-    right: 25px;
-    bottom: 10px;
-    background-color: gray;
-    position: relative;
-    margin-left: -10px;
-    transform: rotate(90deg);
-}
 .contact-language a{
     text-decoration: none;
 }
+.contact-language .line-info-contact {
+    width: 32px;
+    height: 1px;
+    right: 0;
+    left: 17px;
+    bottom: 10px;
+    background-color: gray;
+    position: relative;
+    margin-left: 13px;
+    transform: rotate(90deg);
+}
+
 .upper-par .contact-language .span1 {
     color: red;
     cursor: pointer;
+    
 }
 
 .upper-par .contact-language .span2 {
     color: gray;
-    margin-right: 10px;
+    margin-left: 7px;
     cursor: pointer;
-
 }
 
 
@@ -115,94 +114,80 @@
     margin: 0;
     padding: 7px 0;
 }
-
-.CONTACT-INFO a {
-    float: left;
+.CONTACT-INFO a{
+    float: right;
 }
-
-.CONTACT-INFO .log-in {
+.CONTACT-INFO .log-in{
     color: gold;
-    text-decoration: none;
+    margin-left: 10px;
+    text-decoration:none;
 }
-
-.CONTACT-INFO .sign-in {
+.CONTACT-INFO .sign-in{
     color: #fff;
     margin-left: 28px;
     border-bottom: 1px solid #fff;
 }
-
-.CONTACT-INFO .sign-in:hover {
+.CONTACT-INFO .sign-in:hover{
     text-decoration: none;
 }
 
 /*====end upper bar=====*/
-
 /*====start navbar=====*/
-nav {
+nav{
     position: relative !important;
     padding: 10px 80px !important;
     box-shadow: 2px 2px 8px rgb(216, 211, 211) !important;
 }
-
-.navbar img {
+.navbar img{
     width: 160px;
     margin-left: 10px;
 }
-
-.navbar-brand {
-    color: rgb(189, 11, 11) !important;
-    font-size: 30px;
+.navbar-brand{
+    color: rgb(189, 11, 11)!important;
+  font-size: 30px;
     font-weight: bold;
     margin-right: 1px !important;
 }
-
-.navbar-light .navbar-nav .active>.nav-link {
-    color: rgb(189, 11, 11) !important;
+.navbar-light .navbar-nav .active>.nav-link{
+    color: rgb(189, 11, 11)!important;
     font-weight: bold !important;
-    margin-left: 10px !important;
+  margin-left: 10px !important;
 }
-
-nav .line-nav {
+nav .line-nav{
     position: absolute;
-    width: 70px;
-    height: 2px;
+    width: 70px ;
+    height: 2px ;
     bottom: 0;
-    background-color: rgb(196, 15, 15);
-    ;
+background-color:  rgb(196, 15, 15);;
 }
-
-.navbar-light .navbar-nav .nav-link {
-    color: #06255f !important;
-    margin-right: 5px !important;
-
+.navbar-light .navbar-nav .nav-link{
+ color: #06255f !important;
+ margin-right: 5px !important;
+ 
 }
-
-nav li:not(:last-of-type) {
-    border-left: rgb(235, 229, 229) 1px solid;
+ nav li:not(:last-of-type) {
+    border-left:none;
+    border-right:  rgb(235, 229, 229) 1px solid;
 }
-
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-toggler{
     outline: none;
 }
-
-.btn-nav {
+.btn-nav{
     background-color: #06255f !important;
-    margin-right: 20px;
-    padding: 3px 30px;
+margin-right: 1px;
+padding: 3px 30px;
 }
-
-nav .link-login {
+nav .link-login{
     color: #06255f;
-    border-bottom: 1px solid #06255f;
+ border-bottom: 1px solid #06255f;
+ margin-right: 10px;
 }
-
-nav .link-login:hover {
+nav .link-login:hover{
     text-decoration: none;
 }
-
-nav .btn-nav img {
+nav .btn-nav img{
     width: 40px;
-    transform: translateX(20px);
+    transform: translateX(0px);    
 }
 
 /*====end navbar=====*/
@@ -263,8 +248,10 @@ nav .btn-nav img {
 .input1:nth-child(2){
     margin-bottom: 25px;
 }
-
-.input1 input{
+.form-group{
+    position: relative;
+}
+.form-group input{
   width: 100%;
     outline: none;
 border: none;
@@ -274,19 +261,24 @@ border: 1px solid rgb(214, 214, 214);
 
 }
 
-.input1 label{
+.form-group label{
     position: absolute;
     top: 9px;
-    right: 10px;
+    right: 0;
+    left: 9px;
+    width: 100px;
+    
     transition: .3s all;
     font-size: 15px;
+   
 }
 
 .input1 input:focus + label,
 .input1 input:valid +label
 {
     top: -33px;
-    right: -13px;
+    right: 0;
+    left: -13px;
 }
 .chekinput input{
     margin-left: 5px;
@@ -398,13 +390,14 @@ footer .backgroundlast .lastp-footer p span{
 /*======start media qery======*/
 @media(max-width:990px){
     .upper-par .contact-language {
+transform: translateX(-17px);
         text-align: center;
     }
-
     .contact-language .line-info-contact {
         width: 32px;
         height: 1px;
-        right: 8px;
+        right: 0;
+        left: 6px;
         bottom: 10px;
         background-color: gray;
         position: relative;
@@ -412,61 +405,54 @@ footer .backgroundlast .lastp-footer p span{
         margin: auto;
         transform: rotate(90deg);
     }
-
-    .navbar-brand {
-        color: rgb(189, 11, 11) !important;
-        font-size: 30px !important;
+    .navbar-brand{
+        color: rgb(189, 11, 11)!important;
+      font-size: 30px !important;
         font-weight: bold !important;
         margin-right: 0 !important;
     }
-
-    nav {
+    .CONTACT-INFO a{
+        float: left;
+        transform: translateX(33px);
+    }
+    nav{
         position: relative !important;
         padding: 10px 10px !important;
     }
-
-    nav .line-nav {
-        bottom: 260px;
+    nav .line-nav{
+        bottom: 255px;
     }
-
-    nav li {
-        border: none !important;
+    nav li{
+      border: none !important;
     }
-
-    .img-ios {
+    .img-ios{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .img-ggole {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer .backgroundlast .footer-app h6 {
-        text-align: center;
-    }
-
-    .footer1 {
-        text-align: center;
-    }
-
-    .icon-social-footer,
-    .lastp-footer {
-        text-align: center;
-    }
-    .CONTACT-INFO{
-     margin: auto;
-     width: 200px;
-     
-    }
-    .CONTACT-INFO .sign-in{
-        color: #fff;
-        margin-left: 8px;
-        border-bottom: 1px solid #fff;
-    }
+        }
+        .img-ggole{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .backgroundlast .footer-app h6{
+            text-align: center;
+        }
+        .footer1{
+            text-align: center;
+        }
+        .icon-social-footer,.lastp-footer{
+            text-align: center;
+        }
+        .CONTACT-INFO{
+            margin: auto;
+            width: 200px;
+           }
+           .CONTACT-INFO .sign-in{
+            color: #fff;
+            margin-left: 8px;
+            border-bottom: 1px solid #fff;
+        }
     .button-signup .btn1{
         margin-left: 0;
     }
@@ -546,6 +532,15 @@ footer .backgroundlast .lastp-footer p span{
     }
     .signup .forgetpassword span{
         font-size: 13px;
+    }
+    .button-signup  .btn1{
+        width: 250px;
+        margin-left: 0;
+    
+    }
+    .button-signup  .btn2{
+        width: 250px;
+      
     }
 }
 @media(max-width:382px){

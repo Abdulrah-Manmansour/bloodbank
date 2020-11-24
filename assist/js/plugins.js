@@ -29,9 +29,9 @@ $('.owl-carousel').owlCarousel({
  $(".hoveme").hover(function () {
     var isHovered = $(this).is(":hover");
     if (isHovered) {
-        $(this).children(".overlay").stop().slideDown(300);
+        $(this).children(".test").stop().slideDown(300);
     } else {
-       $(this).children(".overlay").stop().slideUp(300);
+       $(this).children(".test").stop().slideUp(300);
     }
 });
       
